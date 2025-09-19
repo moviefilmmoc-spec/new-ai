@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Interview Assistant</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #ffffff;
+    }
+    #transcript {
+      width: 90%;
+      min-height: 80px;
+      background-color: #1e1e1e;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: 1px solid #333;
+    }
+    #response {
+      width: 90%;
+      min-height: 100px;
+      background-color: #1a1a1a;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 10px;
+      border: 1px solid #444;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #00c853;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #00e676;
+    }
+  </style>
+</head>
+<body>
+  <h1>AI Interview Assistant</h1>
+  <div id="transcript" placeholder="Transcript will appear here...">🎤 Press "Start Listening"</div>
+  <button onclick="startListening()">Start Listening</button>
+  <button onclick="sendToAI()">Send to AI</button>
+  <div id="response">🤖 AI answer will appear here</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
